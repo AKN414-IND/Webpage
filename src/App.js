@@ -1,8 +1,8 @@
 import React from "react";
-import NexusGame from "./Game/NexusGame";
+import Home from "./Pages/Home/Home";
 
 function App() {
-  return <NexusGame />
+  return <Home />;
 }
 
 export default App;
