@@ -5,9 +5,9 @@ import "./NexusGame.css";
 export default function NexusGame() {
   const { unityProvider, loadingProgression, isLoaded } = useUnityContext({
     loaderUrl: "Game/Nexus.loader.js",
-    dataUrl: "Game/Nexus.data.br",
-    frameworkUrl: "Game/Nexus.framework.js.br",
-    codeUrl: "Game/Nexus.wasm.br",
+    dataUrl: "Game/Nexus.data",
+    frameworkUrl: "Game/Nexus.framework.js",
+    codeUrl: "Game/Nexus.wasm",
   });
 
   return (
