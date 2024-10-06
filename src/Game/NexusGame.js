@@ -8,6 +8,9 @@ export default function NexusGame() {
     dataUrl: "Game/Nexus.data",
     frameworkUrl: "Game/Nexus.framework.js",
     codeUrl: "Game/Nexus.wasm",
+    companyName: "Nexus Event",
+    productName: "Nexus Retro",
+    productVersion: "1.0",
   });
 
   return (
