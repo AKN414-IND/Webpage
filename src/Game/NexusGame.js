@@ -3,7 +3,7 @@ import { Unity, useUnityContext } from "react-unity-webgl";
 import "./NexusGame.css";
 
 export default function NexusGame() {
-  const { unityProvider, loadingProgression, isLoaded } = useUnityContext({
+  const { unityProvider, isLoaded } = useUnityContext({
     loaderUrl: "Game/Nexus.loader.js",
     dataUrl: "Game/Nexus.data",
     frameworkUrl: "Game/Nexus.framework.js",
@@ -13,7 +13,11 @@ export default function NexusGame() {
   return (
     <div>
       {!isLoaded && (
-        <p>Loading Application... {Math.round(loadingProgression * 100)}%</p>
+        <div className="loading-wrapper">
+          <div className="loading-content">
+            <div className="loading-text">Loading...</div>
+          </div>
+        </div>
       )}
       <Unity
         unityProvider={unityProvider}
